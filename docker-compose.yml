@@ -1,0 +1,25 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+version: "3.4"
+
+services:
+  database_mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: P@ssWord
+      MYSQL_DATABASE: streaming
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - streaming-network
+    restart: always
+
+networks:
+  streaming-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
+
