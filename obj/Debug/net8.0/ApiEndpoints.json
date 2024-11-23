@@ -34,14 +34,14 @@
   {
     "ContainingType": "StreamingApi.Controllers.StreamController",
     "Method": "Delete",
-    "RelativePath": "Stream/deletarUsuario",
+    "RelativePath": "Stream/deletarUsuario/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "usuario",
-        "Type": "StreamingApi.Models.Usuario",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

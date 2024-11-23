@@ -1,30 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\",
+  "WorkspaceRootPath": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\back\\streamingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\streamingapi\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\back\\streamingapi\\context\\streamingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\streamingapi\\context\\streamingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:context\\streamingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\back\\streamingapi\\controllers\\streamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:controllers\\streamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\streamingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\back\\streamingapi\\models\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\streamingapi\\models\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:models\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\back\\streamingapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\streamingapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\back\\streamingapi\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\streamingapi\\controllers\\streamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:controllers\\streamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|c:\\users\\victor\\desktop\\projeto_maicon\\streamingapi\\repositories\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7792CA-7932-4E1D-875F-C67FFF64EAC1}|StreamingApi.csproj|solutionrelative:repositories\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,30 +38,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Repositories\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Repositories\\IUsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T00:22:05.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "StreamController.cs",
-              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Controllers\\StreamController.cs",
+              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Controllers\\StreamController.cs",
               "RelativeDocumentMoniker": "Controllers\\StreamController.cs",
-              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Controllers\\StreamController.cs",
+              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Controllers\\StreamController.cs",
               "RelativeToolTip": "Controllers\\StreamController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAA9wCEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T03:53:27.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Repositories\\UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Repositories\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Repositories\\UsuarioRepository.cs",
               "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T03:40:51.582Z",
               "EditorCaption": ""
@@ -66,11 +83,11 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Models\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Models\\Usuario.cs",
               "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T03:36:27.327Z",
               "EditorCaption": ""
@@ -79,9 +96,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Playlist.cs",
-              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Models\\Playlist.cs",
+              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Models\\Playlist.cs",
               "RelativeDocumentMoniker": "Models\\Playlist.cs",
-              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Models\\Playlist.cs",
+              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Models\\Playlist.cs",
               "RelativeToolTip": "Models\\Playlist.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -90,13 +107,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Program.cs",
+              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T01:19:54.87Z",
               "EditorCaption": ""
@@ -105,11 +122,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "StreamingContext.cs",
-              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Context\\StreamingContext.cs",
+              "DocumentMoniker": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Context\\StreamingContext.cs",
               "RelativeDocumentMoniker": "Context\\StreamingContext.cs",
-              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\Context\\StreamingContext.cs",
+              "ToolTip": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\Context\\StreamingContext.cs",
               "RelativeToolTip": "Context\\StreamingContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T01:15:37.571Z",
               "EditorCaption": ""

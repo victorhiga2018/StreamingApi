@@ -19,10 +19,11 @@ public class UsuarioRepository : IUsuarioRepository
         _context.SaveChanges();
     }
 
-    public void Delete(Usuario usuario)
+    public async Task Delete(int id)
     {
-        _context.Usuarios.Find(usuario);
-        _context.Usuarios.ExecuteDeleteAsync();
+        var usuario = _context.Usuarios.Where(x => x.Id == id).First();
+        _context.Remove(usuario);
+        _context.SaveChanges();
     }
 
     public async Task<IEnumerable<Usuario>> GetAll()

@@ -38,10 +38,11 @@ public class StreamController : ControllerBase
         return Ok("Usuario atualizado com sucesso!");
     }
 
-    [HttpDelete("deletarUsuario")]
-    public IActionResult Delete([FromBody] Usuario usuario)
+    [HttpDelete("deletarUsuario/{id}")]
+    public IActionResult Delete(int id)
     {
-        _usuarioRepository?.Delete(usuario);
+        //_usuarioRepository.
+        _usuarioRepository?.Delete(id);
         return Ok("Usuario deletado com sucesso!");
     }
 
