@@ -8,53 +8,81 @@ namespace StreamingApi.Controllers;
 [Route("[controller]")]
 public class StreamController : ControllerBase
 {
-    private readonly IUsuarioRepository _usuarioRepository;
-
-
-    public StreamController(IUsuarioRepository usuarioRepository)
+    private readonly IPlaylistRepository _playlistRepository;
+    public StreamController(IPlaylistRepository playlistRepository)
     {
-        _usuarioRepository = usuarioRepository;
+        _playlistRepository = playlistRepository;
     }
 
-    [HttpGet("obterUsuarios")]
-    public async Task<IActionResult> Get()
+    [HttpPost]
+    [Route("obterPlaylists")]
+    public IActionResult ObterTodasPlaylist([FromBody] Usuario usuario)
     {
+        var playlists = _playlistRepository.ObterTodos(usuario);
 
-        return Ok(await _usuarioRepository.GetAll());
+        if (playlists != null)
+            return Ok(playlists);
+
+        return NotFound("Sem playlist cadastrada!");
     }
 
-    [HttpPost("cadastrarUsuario")]
-    public IActionResult Post([FromBody] Usuario usuario)
+    [HttpPost]
+    [Route("cadastrarPlaylist")]
+    public IActionResult CadastrarPlaylist([FromBody] Playlist playlist)
     {
-        _usuarioRepository.Add(usuario);
-
-        return Ok("Usuario cadastrado com sucesso!");
+        try
+        {
+            _playlistRepository.Adicionar(playlist);
+            return Ok("Playlist cadastrada com sucesso!");
+        }
+        catch (Exception)
+        {
+            return BadRequest("Erro ao cadastrar!");
+            throw;
+        }  
     }
 
-    [HttpPost("loginUsuario")]
-    public IActionResult Login([FromBody] Usuario usuario)
+    [HttpGet]
+    [Route("obterPlaylistPorId/{id}")]
+    public IActionResult ObterPlaylistPorId(int id)
     {
-        var isLogado = _usuarioRepository.ObterPorUsuario(usuario);
+        var playlist = _playlistRepository.ObterPorId(id);
 
-        if (isLogado != null)
-          return Ok("Login realizado com sucesso!");
+        if (playlist != null)
+            return Ok(playlist);
 
-        return NotFound("Login não encontrado!");
+        return NotFound("Nenhuma playlist encontrada!");
     }
 
-    [HttpPut("atualizarUsuario")]
-    public IActionResult Put([FromBody] Usuario usuario)
+    [HttpPut]
+    [Route("atualizarPlaylist")]
+    public IActionResult AtualizarPlaylist([FromBody] Playlist playlist)
     {
-        _usuarioRepository.Update(usuario);
-        return Ok("Usuario atualizado com sucesso!");
+        try
+        {
+            _playlistRepository.Atualizar(playlist);
+            return Ok("Playlist atualizada com sucesso!");
+        }
+        catch (Exception)
+        {
+            return BadRequest("Erro ao atualizar!");
+            throw;
+        }
     }
 
-    [HttpDelete("deletarUsuario/{id}")]
-    public IActionResult Delete(int id)
+    [HttpDelete]
+    [Route("deletarPlaulist/{id}")]
+    public ActionResult DeletarPlaylist(int id)
     {
-        //_usuarioRepository.
-        _usuarioRepository?.Delete(id);
-        return Ok("Usuario deletado com sucesso!");
+        try
+        {
+            _playlistRepository.Deletar(id);
+            return Ok("Playlist deletada com sucesso!");
+        }
+        catch (Exception)
+        {
+            return BadRequest("Erro ao deletar!");
+            throw;
+        }
     }
-
 }

@@ -8,5 +8,6 @@ public interface IUsuarioRepository
     void Update(Usuario usuario);
     Task<IEnumerable<Usuario>> GetAll();
     Task Delete(int id);
-    Task<Usuario>? ObterPorUsuario(Usuario usuario);
+    Task<Usuario>? VerificarLogin(Usuario usuario);
+    Usuario ObterPorUsuario(Usuario usuario);
 }

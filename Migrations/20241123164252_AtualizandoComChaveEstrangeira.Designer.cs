@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StreamingApi.Context;
 
@@ -10,9 +11,11 @@ using StreamingApi.Context;
 namespace StreamingApi.Migrations
 {
     [DbContext(typeof(StreamingContext))]
-    partial class StreamingContextModelSnapshot : ModelSnapshot
+    [Migration("20241123164252_AtualizandoComChaveEstrangeira")]
+    partial class AtualizandoComChaveEstrangeira
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,6 +99,9 @@ namespace StreamingApi.Migrations
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("varchar(150)");
+
+                    b.Property<int>("IdPlaylist")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()
