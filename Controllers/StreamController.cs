@@ -31,6 +31,17 @@ public class StreamController : ControllerBase
         return Ok("Usuario cadastrado com sucesso!");
     }
 
+    [HttpPost("loginUsuario")]
+    public IActionResult Login([FromBody] Usuario usuario)
+    {
+        var isLogado = _usuarioRepository.ObterPorUsuario(usuario);
+
+        if (isLogado != null)
+          return Ok("Login realizado com sucesso!");
+
+        return NotFound("Login não encontrado!");
+    }
+
     [HttpPut("atualizarUsuario")]
     public IActionResult Put([FromBody] Usuario usuario)
     {

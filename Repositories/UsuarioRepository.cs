@@ -31,6 +31,15 @@ public class UsuarioRepository : IUsuarioRepository
         return await _context.Usuarios.ToListAsync();
     }
 
+    public Task<Usuario>? ObterPorUsuario(Usuario usuario)
+    {
+        var login = _context.Usuarios.Where(x => x.Email == usuario.Email && x.Nome == usuario.Nome).ToList();
+        if (login.Any())
+            return Task.FromResult(login.First());
+
+        return null;
+    }
+
     public void Update(Usuario usuario)
     {
         _context.Usuarios.Find(usuario);

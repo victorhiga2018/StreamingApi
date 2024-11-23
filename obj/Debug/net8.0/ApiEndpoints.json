@@ -49,6 +49,22 @@
   },
   {
     "ContainingType": "StreamingApi.Controllers.StreamController",
+    "Method": "Login",
+    "RelativePath": "Stream/loginUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "StreamingApi.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamingApi.Controllers.StreamController",
     "Method": "Get",
     "RelativePath": "Stream/obterUsuarios",
     "HttpMethod": "GET",

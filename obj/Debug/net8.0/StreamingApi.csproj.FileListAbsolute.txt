@@ -215,3 +215,4 @@ C:\Users\victor\Desktop\Projeto_Maicon\StreamingApi\obj\Debug\net8.0\refint\Stre
 C:\Users\victor\Desktop\Projeto_Maicon\StreamingApi\obj\Debug\net8.0\StreamingApi.pdb
 C:\Users\victor\Desktop\Projeto_Maicon\StreamingApi\obj\Debug\net8.0\StreamingApi.genruntimeconfig.cache
 C:\Users\victor\Desktop\Projeto_Maicon\StreamingApi\obj\Debug\net8.0\ref\StreamingApi.dll
+C:\Users\victor\Desktop\Projeto_Maicon\Back\StreamingApi\obj\Debug\net8.0\StreamingApi.sourcelink.json

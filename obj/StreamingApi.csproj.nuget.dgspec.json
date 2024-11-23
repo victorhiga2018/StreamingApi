@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\StreamingApi.csproj": {}
+    "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\StreamingApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\StreamingApi.csproj": {
+    "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\StreamingApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\StreamingApi.csproj",
+        "projectUniqueName": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\StreamingApi.csproj",
         "projectName": "StreamingApi",
-        "projectPath": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\StreamingApi.csproj",
+        "projectPath": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\StreamingApi.csproj",
         "packagesPath": "C:\\Users\\victor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\StreamingApi\\obj\\",
+        "outputPath": "C:\\Users\\victor\\Desktop\\Projeto_Maicon\\Back\\StreamingApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
