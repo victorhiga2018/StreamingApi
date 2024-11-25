@@ -18,6 +18,8 @@ public class StreamingContext : DbContext
     {
         modelBuilder.ApplyConfiguration(new UsuarioMap());
         modelBuilder.ApplyConfiguration(new PlaylistMap());
+        modelBuilder.ApplyConfiguration(new ConteudoMap());
+        modelBuilder.ApplyConfiguration(new CriadorMap());
 
         base.OnModelCreating(modelBuilder);
     }

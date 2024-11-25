@@ -22,6 +22,11 @@ public class PlaylistMap : IEntityTypeConfiguration<Playlist>
 
         builder.HasOne(c => c.Usuario)
         .WithMany(u => u.Playlists)
-        .HasForeignKey(c => c.UsuarioId);
+        .HasForeignKey(c => c.UsuarioId)
+        .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasMany(c => c.Conteudos)
+        .WithOne(u => u.Playlist)
+        .HasForeignKey(c => c.PlaylistId);
     }
 }

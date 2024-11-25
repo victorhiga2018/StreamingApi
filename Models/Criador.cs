@@ -4,6 +4,8 @@ namespace StreamingApi.Models;
 
 public class Criador : IdBase
 {
-    public string Nome { get; set; }
-    List<Conteudo> Conteudos { get; set; }
+    public string Nome { get; set; } = string.Empty;
+    public virtual ICollection<Conteudo>? Conteudos { get; set; } = null!;
+    public virtual Conteudo? Conteudo { get; set; } = null;
+    public int? ConteudoId { get; set; }
 }

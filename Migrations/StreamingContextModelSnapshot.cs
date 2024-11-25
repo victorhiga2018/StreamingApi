@@ -23,9 +23,10 @@ namespace StreamingApi.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
 
-                    b.Property<int>("CriadorId")
+                    b.Property<int?>("CriadorId")
                         .HasColumnType("int");
 
                     b.Property<int?>("PlaylistId")
@@ -33,11 +34,13 @@ namespace StreamingApi.Migrations
 
                     b.Property<string>("Tipo")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
 
                     b.Property<string>("Titulo")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.HasKey("Id");
 
@@ -45,7 +48,7 @@ namespace StreamingApi.Migrations
 
                     b.HasIndex("PlaylistId");
 
-                    b.ToTable("Conteudos");
+                    b.ToTable("Conteudos", (string)null);
                 });
 
             modelBuilder.Entity("StreamingApi.Models.Criador", b =>
@@ -54,13 +57,20 @@ namespace StreamingApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<int?>("ConteudoId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Criadores");
+                    b.HasIndex("ConteudoId")
+                        .IsUnique();
+
+                    b.ToTable("Criadores", (string)null);
                 });
 
             modelBuilder.Entity("StreamingApi.Models.Playlist", b =>
@@ -75,7 +85,7 @@ namespace StreamingApi.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
-                    b.Property<int>("UsuarioId")
+                    b.Property<int?>("UsuarioId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -109,17 +119,26 @@ namespace StreamingApi.Migrations
 
             modelBuilder.Entity("StreamingApi.Models.Conteudo", b =>
                 {
-                    b.HasOne("StreamingApi.Models.Criador", "Criador")
-                        .WithMany()
-                        .HasForeignKey("CriadorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("StreamingApi.Models.Playlist", null)
+                    b.HasOne("StreamingApi.Models.Criador", null)
                         .WithMany("Conteudos")
-                        .HasForeignKey("PlaylistId");
+                        .HasForeignKey("CriadorId");
 
-                    b.Navigation("Criador");
+                    b.HasOne("StreamingApi.Models.Playlist", "Playlist")
+                        .WithMany("Conteudos")
+                        .HasForeignKey("PlaylistId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Playlist");
+                });
+
+            modelBuilder.Entity("StreamingApi.Models.Criador", b =>
+                {
+                    b.HasOne("StreamingApi.Models.Conteudo", "Conteudo")
+                        .WithOne("Criador")
+                        .HasForeignKey("StreamingApi.Models.Criador", "ConteudoId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Conteudo");
                 });
 
             modelBuilder.Entity("StreamingApi.Models.Playlist", b =>
@@ -127,10 +146,19 @@ namespace StreamingApi.Migrations
                     b.HasOne("StreamingApi.Models.Usuario", "Usuario")
                         .WithMany("Playlists")
                         .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("StreamingApi.Models.Conteudo", b =>
+                {
+                    b.Navigation("Criador");
+                });
+
+            modelBuilder.Entity("StreamingApi.Models.Criador", b =>
+                {
+                    b.Navigation("Conteudos");
                 });
 
             modelBuilder.Entity("StreamingApi.Models.Playlist", b =>
