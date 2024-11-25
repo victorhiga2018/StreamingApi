@@ -5,7 +5,7 @@ namespace StreamingApi.Models;
 public class Playlist : IdBase
 {
     public string Nome { get; set; } = string.Empty;
-    public Usuario Usuario { get; set; }
+    public  Usuario? Usuario { get; set; } = null!;
     public List<Conteudo> Conteudos { get; set; } = new List<Conteudo>();
-    public int UsuarioId { get; set; }
+    public int? UsuarioId { get; set; }
 }

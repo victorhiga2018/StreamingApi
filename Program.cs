@@ -18,8 +18,13 @@ builder.Services.AddDbContext<StreamingContext>(opt => opt.UseMySql(connetionStr
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IPlaylistRepository, PlaylistRepository>();
 
-builder.Services.AddControllers().AddJsonOptions(x =>
-   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
+
+
 
 var app = builder.Build();
 

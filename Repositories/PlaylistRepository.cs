@@ -45,7 +45,7 @@ public class PlaylistRepository : IPlaylistRepository
         return null;
     }
 
-    public IEnumerable<Playlist> ObterTodos(Usuario usuario)
+    public List<Playlist> ObterTodos(Usuario usuario)
     {
         var usuarioPlaylist = _usuarioRepository.ObterPorUsuario(usuario);
         var todasPlaylists = _streamingContext.Playlists.Where(x => x.UsuarioId == usuarioPlaylist.Id).ToList();

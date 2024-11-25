@@ -4,7 +4,7 @@ namespace StreamingApi.Repositories;
 
 public interface IPlaylistRepository
 {
-    IEnumerable<Playlist> ObterTodos(Usuario usuario);
+    List<Playlist> ObterTodos(Usuario usuario);
     Playlist? ObterPorId(int id);
     void Adicionar(Playlist playlist);
     void Atualizar(Playlist playlist);
