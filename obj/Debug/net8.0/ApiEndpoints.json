@@ -34,7 +34,7 @@
   {
     "ContainingType": "StreamingApi.Controllers.StreamController",
     "Method": "DeletarPlaylist",
-    "RelativePath": "Stream/deletarPlaulist/{id}",
+    "RelativePath": "Stream/deletarPlaylist/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

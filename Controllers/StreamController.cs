@@ -79,7 +79,7 @@ public class StreamController : ControllerBase
     }
 
     [HttpDelete]
-    [Route("deletarPlaulist/{id}")]
+    [Route("deletarPlaylist/{id}")]
     public ActionResult DeletarPlaylist(int id)
     {
         try
