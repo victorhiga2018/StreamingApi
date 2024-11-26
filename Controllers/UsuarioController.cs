@@ -37,7 +37,7 @@ public class UsuarioController : ControllerBase
         var isLogado = _usuarioRepository.VerificarLogin(usuario);
 
         if (isLogado != null)
-          return Ok("Login realizado com sucesso!");
+          return Ok(isLogado);
 
         return NotFound("Login não encontrado!");
     }

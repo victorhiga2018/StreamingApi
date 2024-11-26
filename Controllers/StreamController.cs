@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StreamingApi.Dtos;
 using StreamingApi.Models;
 using StreamingApi.Repositories;
 
@@ -20,8 +21,15 @@ public class StreamController : ControllerBase
     {
         var playlists = _playlistRepository.ObterTodos(usuario);
 
+        var response = new List<PlaylistResponseDto>();
+
+        foreach (var playlist in playlists)
+        {
+            response.Add(new PlaylistResponseDto { NomePlaylist = playlist.Nome, Conteudo = new ConteudoResponseDto { Tipo = playlist.Conteudos[0].Tipo, Titulo = playlist.Conteudos[0].Titulo } });
+        }
+
         if (playlists != null)
-            return Ok(playlists);
+            return Ok(response);
 
         return NotFound("Sem playlist cadastrada!");
     }
