@@ -25,7 +25,7 @@ public class StreamController : ControllerBase
 
         foreach (var playlist in playlists)
         {
-            response.Add(new PlaylistResponseDto { NomePlaylist = playlist.Nome, Conteudo = new ConteudoResponseDto { Tipo = playlist.Conteudos[0].Tipo, Titulo = playlist.Conteudos[0].Titulo } });
+            response.Add(new PlaylistResponseDto { NomePlaylist = playlist.Nome, Conteudo = new ConteudoResponseDto { Tipo = playlist.Conteudos[0].Tipo, Titulo = playlist.Conteudos[0].Titulo }, Id = playlist.Id });
         }
 
         if (playlists != null)
